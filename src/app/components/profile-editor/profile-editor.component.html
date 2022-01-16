@@ -5,7 +5,7 @@
     <label for="last-name">Last Name: </label>
     <input id="last-name" type="text" formControlName="lastName"><br>
 
-    <span>---------------------------------------------------------------------</span>
+    <span>---------------------------------------------------------------------------------------------------------------------</span>
 
     <div formGroupName="address">
         <h2>Address</h2>
@@ -23,7 +23,7 @@
         <input id="zip" type="text" formControlName="zip">
     </div>
 
-    <span>---------------------------------------------------------------------</span>
+    <span>---------------------------------------------------------------------------------------------------------------------</span>
 
     <div formArrayName="aliases">
         <h2>Aliases</h2>
@@ -36,9 +36,9 @@
         </div>
     </div>
 
-    <span>---------------------------------------------------------------------</span>
+    <span>---------------------------------------------------------------------------------------------------------------------</span>
 
-    <p>Form values: {{profileForm.value | json}}</p>
+    <p>Form values: {{profileForm.value | json}}</p>`
     <p>Form Status: {{ profileForm.status }}</p>
 
     <button (click)="updateProfile()">Update Profile</button>
